@@ -3,6 +3,9 @@
     <Description>EasyNetQ.IntegrationTests</Description>
     <TargetFramework>netcoreapp5.0</TargetFramework>
     <LangVersion>latest</LangVersion>
+    <AssemblyOriginatorKeyFile>..\..\Assets\EasyNetQ.snk</AssemblyOriginatorKeyFile>
+    <SignAssembly>true</SignAssembly>
+    <PublicSign Condition=" '$(OS)' != 'Windows_NT' ">true</PublicSign>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\EasyNetQ\EasyNetQ.csproj" />
