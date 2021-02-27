@@ -101,7 +101,7 @@ namespace EasyNetQ.Consumer
                 return;
 
             disposed = true;
-            cts.Cancel();
+            //cts.Cancel();
             onTheFlyMessages.Wait();
             cts.Dispose();
             onTheFlyMessages.Dispose();
